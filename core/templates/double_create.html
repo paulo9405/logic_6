@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Double Create</h1>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Save</button>
+    </form>
+
+    {% if erro_value %}
+        {{erro_value}}
+    {% endif %}
+
+    {% if erro_char %}
+        {{erro_char}}
+    {% endif %}
+
+</body>
+</html>
